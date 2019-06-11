@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraComponent : MonoBehaviour
+public class PrefabComponent : MonoBehaviour
 {
+    //public Animator animator;
     // Start is called before the first frame update
+
+    public Animator animator;
+
+    void Awake() {
+        animator = this.GetComponent<Animator>();
+    }
+
+
     void Start()
     {
 
@@ -15,4 +24,6 @@ public class CameraComponent : MonoBehaviour
     {
 
     }
+
+
 }
