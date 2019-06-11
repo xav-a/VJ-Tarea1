@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MusicItem1
+  - MusicItem2
+  - MusicTrigger1
+  - MusicTrigger2
   layers:
   - Default
   - TransparentFX
