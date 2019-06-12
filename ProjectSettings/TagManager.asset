@@ -8,6 +8,7 @@ TagManager:
   - MusicItem2
   - MusicTrigger1
   - MusicTrigger2
+  - Item
   layers:
   - Default
   - TransparentFX

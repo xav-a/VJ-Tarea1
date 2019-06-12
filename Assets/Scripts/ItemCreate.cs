@@ -5,16 +5,13 @@ using UnityEngine;
 public class ItemCreate : MonoBehaviour
 {
     //Camera camera;
-
-    public GameObject itemPrefab;
     public GameObject parent;
+    GameObject itemPrefab;
 
     void Start()
     {
-
+        itemPrefab = Resources.Load<GameObject>("Prefabs/Item");
     }
-
-
 
     public void Update()
     {
@@ -33,15 +30,17 @@ public class ItemCreate : MonoBehaviour
                         clickPosition,
                         Quaternion.identity);
             copy.transform.parent = parent.transform;
-            PrefabComponent prefab = copy.GetComponent<PrefabComponent>();
+
+
+            Animator itemAnimator = copy.GetComponent<Animator>();
 
             if (clickedButton1)
             {
-                prefab.animator.SetBool("Selection", true);
+                itemAnimator.SetBool("Selection", true);
             }
             else
             {
-                prefab.animator.SetBool("Selection", false);
+                itemAnimator.SetBool("Selection", false);
             }
 
 
