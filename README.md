@@ -1,5 +1,5 @@
 
-Simple Unity project for interactivity testing.
+Simple Unity project for interactivity testing. This repo makes use of Git LFS
 
 
 ### CONTROLS
@@ -7,7 +7,7 @@ Simple Unity project for interactivity testing.
 Right mouse button to drop a cherry.
 Left mouse button to drop a diamond.
 
-Som tiles make the objects the disappear, others leave them as is. Stack
+Som tiles make the objects disappear, others leave them as is. Stack
 some cherries and diamons or watch vanish with special effects.
 
 
